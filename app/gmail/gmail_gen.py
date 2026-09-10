@@ -74,3 +74,5 @@ for attempt in range(4):
        "subject": subject.group(1).strip(),
        "body": body.group(1).strip()
      }
+    
+  except urllib.error.HTTPError as e:
