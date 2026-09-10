@@ -87,3 +87,5 @@ except urllib.error.HTTPError as e:
 
 except Exception:
     if attempt == 3:
+         raise
+    time.sleep(1)
