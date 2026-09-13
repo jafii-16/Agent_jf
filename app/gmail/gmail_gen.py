@@ -6,12 +6,12 @@ import random
 import urllib.request
 import urllib.error
 
-Gemini_API_Key = os.getenv("GEMINI_API_KEY", "")
+Gemini_API_Key = os.getenv("Gemini_API_Key", "")
 MODEL = os.getenv("GEMINI_MODEL", "gemini-3.6-flash")
 
 def generate_email_with_gemini(command):
     if not Gemini_API_Key:
-        raise RuntimeError("GEMINI_API_KEY is missing.")
+        raise RuntimeError("Gemini_API_Key is missing.")
 
     prompt = f"""
 You are a professional Gmail email writing assistant.
