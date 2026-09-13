@@ -6,11 +6,11 @@ import random
 import urllib.request
 import urllib.error
 
-API_KEY = os.getenv("GEMINI_API_KEY", "")
+Gemini_API_Key = os.getenv("GEMINI_API_KEY", "")
 MODEL = os.getenv("GEMINI_MODEL", "gemini-3.6-flash")
 
 def generate_email_with_gemini(command):
-    if not API_KEY:
+    if not Gemini_API_Key:
         raise RuntimeError("GEMINI_API_KEY is missing.")
 
     prompt = f"""
